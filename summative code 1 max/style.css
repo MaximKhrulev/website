@@ -1,0 +1,365 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+.body
+
+{
+  background-image: url(https://static.wikia.nocookie.net/batman/images/9/90/TheDarkKnightRises_Poster-1.jpg/revision/latest?cb=20140708223612);
+  background-attachment: fixed;
+  background-color: #999;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#landing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #858586;
+}
+
+.top-nav{
+    background: #333;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .top-nav a:not(:first-child){
+    /* display: none; */
+  }
+
+  .top-nav a.icon{
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .top-nav a{
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .top-nav a:hover {
+    background-color: #ddd;
+    color: #000;
+    /* width: fit-content; */
+  }
+
+  .top-nav a.logo:hover {
+    background: none;
+  }
+
+  .current {
+    background: red;
+    /* width: fit-content; */
+  }
+  .logo
+  {
+    height: 50px;
+    width: 100px;
+  }
+  .top-nav a.icon:hover{
+    color: #a503c8;
+    background: none;
+  }
+
+  .top-nav.responsive{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-nav.responsive a.icons{/* prevents the icon from being positioned at the bottom of the column (due to inheritance from the above flex-direction rule) */
+    position: absolute;
+    right: 0;
+    top: 14px; /* This value should match your padding value to be even */
+  }
+
+  .top-nav.responsive a {
+    /* Display and format the nav items for mobile */
+    display: block;
+    text-align: left;
+  }
+
+
+  
+  h1,
+  h2,
+  p {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 2% 5%;
+  }
+
+  h1{
+    font-size: 32pt;
+  }
+
+  a {
+    /*   text-decoration: none; */
+    font-family: sans-serif;
+  }
+
+  article {
+    background-color: #ccc;
+    padding: 5%;
+  }
+
+  /* Global Styling End */
+
+  /* Nav Styling */
+
+  nav {
+    background: #000;
+    padding: 2%;
+  }
+
+  nav li {
+    display: inline-block;
+    font-family: "Charmonman", cursive;
+    padding: 0 2%;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14pt;
+
+  }
+
+  nav li a:hover {
+    color: cyan;
+      border-bottom: dashed 4px cyan;
+     transition: all .2s ease-in-out;
+  }
+
+  .active{
+    border-bottom: dashed 4px cyan;
+  }
+
+  /* Nav Styling End */
+
+  /* Footer Styling */
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #3d3d3d;
+  }
+
+  footer a {
+    color: blue;
+  }
+
+  /* Footer Styling End */
+
+  .footer-clean {
+    padding:50px 0;
+    background-color:#fff;
+    color:#4b4c4d;
+  }
+
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+
+  .footer-clean .item.social {
+    text-align:right;
+  }
+
+  .flex-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .col{
+    display: block;
+    text-align: left;
+  }
+
+  /* Here are the styles that I have moved from the index file to your external css */
+
+
+    body {
+      background: #eee;
+      text-align: center;
+    }
+    button {
+      display: inline-block;
+      background-color: #1c87c9;
+      color: #eee;
+      margin: 25px;
+      position: relative;
+      border-radius: 3px;
+      border: none;
+      font-size: 1.5em;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 2px 8px 0 #999;
+    }
+    button:hover {
+      background-color: #999;
+      color: #ffcc00;
+    }
+    #happy {
+      cursor: url("/uploads/media/default/0001/02/ee4486d1b3fc998e444c3b0100c73db282760eb5.png"), auto;
+    }
+    #sad {
+      cursor: url("/uploads/media/default/0001/02/38cb87a27305100311d9c96e5a5ebb88f04d8034.png"), auto;
+    }
+    #love {
+      cursor: url("/uploads/media/default/0001/02/4be757cf6e9ffc865861649ca423654484ad3dc1.png"), auto;
+    }
+
+
+
+
+
+
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+
+  @media screen and (min-width: 600px) {
+    .logo{
+      width: 200px;
+      height: 100px;
+    }
+    /* Navigation Menu */
+    .top-nav {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .top-nav a {
+      display: flex;
+    }
+
+    .top-nav a:not(:first-child){
+      display: block;
+    }
+
+    .top-nav a:nth-child(1){
+      margin-right: auto;
+      /* Applies automatic margin to the right of the first a element inside the top-nav class (the placeholder logo in this example) */
+    }
+
+    .top-nav a.icon {
+      display: none;
+    }
+    .flex-grid{
+      display: flex;
+      flex-direction: row;
+    }
+    .col{
+      display: flex;
+      flex: 1;
+      border: solid 2px red;
+    }
+  }
+
+  /* New footer starts here */
+  @media only screen and (max-width: 1023px){
+  /*.wds-global-footer {
+    min-width: 768px;
+  }*/
+
+  #wds-global-footer {
+    font-family: rubik,helvetica,arial,sans-serif;
+  }
+
+  .wds-global-footer {
+    background-color: #3d3d3d;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.25;
+    margin-top: 30px;
+  }
+
+  }
+ img {
+   border: 3px solid red;
+ }
+
